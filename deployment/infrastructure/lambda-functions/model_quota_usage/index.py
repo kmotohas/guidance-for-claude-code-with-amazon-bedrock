@@ -28,6 +28,12 @@ QUOTA_MAPPINGS = {
         "rpm_quota_code": "L-C99C7EF6",
         "regions": ["us-east-1", "us-west-2", "us-east-2"]
     },
+    "us.anthropic.claude-sonnet-4-6": {
+        "name": "Sonnet 4.6",
+        "tpm_quota_code": "L-59759B4A",
+        "rpm_quota_code": "L-559DCC33",
+        "regions": ["us-east-1", "us-west-2", "us-east-2"]
+    },
     "us.anthropic.claude-sonnet-4-20250514-v1:0": {
         "name": "Sonnet 4",
         "tpm_quota_code": "L-59759B4A",
@@ -40,6 +46,18 @@ QUOTA_MAPPINGS = {
         "rpm_quota_code": "L-3D8CC480",
         "regions": ["us-east-1", "us-west-2", "us-east-2"]
     },
+    "us.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "name": "Haiku 4.5",
+        "tpm_quota_code": "L-D69CC3F0",
+        "rpm_quota_code": "L-9C2DA6F3",
+        "regions": ["us-east-1", "us-west-2", "us-east-2"]
+    },
+    "eu.anthropic.claude-sonnet-4-6": {
+        "name": "Sonnet 4.6 (EU)",
+        "tpm_quota_code": "L-59759B4A",
+        "rpm_quota_code": "L-559DCC33",
+        "regions": ["eu-west-1", "eu-west-3", "eu-central-1"]
+    },
     "eu.anthropic.claude-sonnet-4-20250514-v1:0": {
         "name": "Sonnet 4 (EU)",
         "tpm_quota_code": "L-59759B4A",
@@ -50,6 +68,12 @@ QUOTA_MAPPINGS = {
         "name": "Sonnet 3.7 (EU)",
         "tpm_quota_code": "L-6E888CC2",
         "rpm_quota_code": "L-3D8CC480",
+        "regions": ["eu-west-1", "eu-west-3", "eu-central-1"]
+    },
+    "eu.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "name": "Haiku 4.5 (EU)",
+        "tpm_quota_code": "L-D69CC3F0",
+        "rpm_quota_code": "L-9C2DA6F3",
         "regions": ["eu-west-1", "eu-west-3", "eu-central-1"]
     },
     "apac.anthropic.claude-sonnet-4-20250514-v1:0": {

@@ -1257,10 +1257,14 @@ class InitCommand(Command):
         # Show selected model
         selected_model = config["aws"].get("selected_model", "")
         model_display = {
+            "us.anthropic.claude-opus-4-6-v1": "Claude Opus 4.6",
+            "us.anthropic.claude-opus-4-5-20251101-v1:0": "Claude Opus 4.5",
             "us.anthropic.claude-opus-4-1-20250805-v1:0": "Claude Opus 4.1",
             "us.anthropic.claude-opus-4-20250514-v1:0": "Claude Opus 4",
-            "us.anthropic.claude-3-7-sonnet-20250219-v1:0": "Claude 3.7 Sonnet",
+            "us.anthropic.claude-sonnet-4-6": "Claude Sonnet 4.6",
             "us.anthropic.claude-sonnet-4-20250514-v1:0": "Claude Sonnet 4",
+            "us.anthropic.claude-3-7-sonnet-20250219-v1:0": "Claude 3.7 Sonnet",
+            "us.anthropic.claude-haiku-4-5-20251001-v1:0": "Claude Haiku 4.5",
         }
         if selected_model:
             table.add_row("Claude Model", model_display.get(selected_model, selected_model))
@@ -1818,10 +1822,14 @@ class InitCommand(Command):
         selected_model = config["aws"].get("selected_model")
         if selected_model:
             model_names = {
+                "us.anthropic.claude-opus-4-6-v1": "Claude Opus 4.6",
+                "us.anthropic.claude-opus-4-5-20251101-v1:0": "Claude Opus 4.5",
                 "us.anthropic.claude-opus-4-1-20250805-v1:0": "Claude Opus 4.1",
                 "us.anthropic.claude-opus-4-20250514-v1:0": "Claude Opus 4",
-                "us.anthropic.claude-3-7-sonnet-20250219-v1:0": "Claude 3.7 Sonnet",
+                "us.anthropic.claude-sonnet-4-6": "Claude Sonnet 4.6",
                 "us.anthropic.claude-sonnet-4-20250514-v1:0": "Claude Sonnet 4",
+                "us.anthropic.claude-3-7-sonnet-20250219-v1:0": "Claude 3.7 Sonnet",
+                "us.anthropic.claude-haiku-4-5-20251001-v1:0": "Claude Haiku 4.5",
             }
             console.print(f"• Claude Model: [cyan]{model_names.get(selected_model, selected_model)}[/cyan]")
 
